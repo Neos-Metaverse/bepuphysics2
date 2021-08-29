@@ -12,7 +12,7 @@ pool:
 variables:
   solution: 'Library.sln'
   buildPlatform: 'Any CPU'
-  buildConfiguration: 'ReleaseStripNoProfiling'
+  buildConfiguration: 'ReleaseStrip'
 
 steps:
 - task: NuGetToolInstaller@1
