@@ -4,6 +4,10 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
+#if !DEBUG && !NETSTANDARD2_0
+[module: SkipLocalsInit]
+#endif
+
 namespace BepuUtilities.Memory
 {
     /// <summary>
